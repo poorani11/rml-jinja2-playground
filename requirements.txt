@@ -1,0 +1,12 @@
+Jinja2==2.7.3
+lxml==3.4.3
+MarkupSafe==0.23
+Pillow==2.8.1
+Pygments==2.0.2
+PyPDF2==1.24
+reportlab==3.1.44
+svg2rlg==0.3
+z3c.rml==2.8.0
+zope.event==4.0.3
+zope.interface==4.1.2
+zope.schema==4.4.2
