@@ -22,7 +22,7 @@ jinja2_env = jinja2.Environment(loader=template_loader)
 def main(pdf_output_filepath):
 
     template = jinja2_env.get_template(
-        'template1.rml'
+        'template5.rml'
     )
 
     context = {

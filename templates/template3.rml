@@ -1,0 +1,11 @@
+{% extends 'base.rml' %}
+{% block health_data %}
+<illustration height="100" width="525">
+    <setFont name="MyriadProCondensed" size="12"/>
+    <drawString x="10" y="52">Height (in feet):</drawString>
+    <drawString x="110" y="55">5</drawString>
+
+    <drawString x="10" y="35">weight (in Kg.):</drawString>
+    <drawString x="110" y="35">50</drawString>
+</illustration>
+{%endblock%}

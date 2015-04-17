@@ -1,0 +1,14 @@
+{% extends 'base.rml' %}
+{% block attendance %}
+<illustration height="100" width="525">
+    <setFont name="MyriadProCondensed" size="12"/>
+        <drawString x="270" y="55">NO. of Working Days</drawString>
+        <drawString x="270" y="35">No. of Days Present</drawString>
+
+    <setFont name="MyriadProCondensed" size="12"/>
+        <drawCenteredString x="400" y="55">300</drawCenteredString>
+        <drawCenteredString x="400" y="35">218</drawCenteredString>
+
+</illustration>
+
+{%endblock%}

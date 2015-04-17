@@ -28,6 +28,12 @@
         <pageTemplate id="main">
           <pageGraphics>
           </pageGraphics>
+frames=[ frame1, frame2, frame3, frame4, frame5]
+frame1={"id": "page4", "x1": "46","y1":"35",width:"525",height:"772"}
+frame2={"id": "page1", "x1": "645","y1":"35",width:"525",height:"772"}
+frame3={"id": "page2", "x1": "35","y1":"50",width:"525",height:"772"}
+frame4={"id": "page3", "x1":"630","y1":"35","width":"525","height":"772"}
+frame5={"id": "xamcheck_data", "x1":"35","y1":"70","width":"525","height":"772"}
 
           <frame id="page4" x1="46" y1="35" width="525" height="772" />
           <frame id="page1" x1="645" y1="35" width="525" height="772" />
@@ -69,6 +75,7 @@
       <paraStyle name="titleFrame" fontName="MyriadProCondensed" fontSize="16" leading="14" />
     </stylesheet>
     <story>
-     {%block content %}{%endblock%}
+   
+     {% block signature %}{%endblock%}
      </story>
     </document>

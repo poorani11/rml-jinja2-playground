@@ -1,0 +1,32 @@
+{% extends 'base.rml' %}
+{% block health_and_physicaleducation %}
+<blockTable colwidths="50mm 52mm 52mm" style="nakedTable">
+    <blockTableStyle id="inlineStyle">
+        <blockValign value="TOP" />
+    </blockTableStyle>
+    <tr>
+        <td topPadding="10mm">
+            <para style="cceSubjectName">
+                Yoga
+            </para>
+        </td>
+        <td leftPadding="5mm" rightPadding="5mm">
+            <para style="cceSubjectGrade" alignment="center">
+                A
+            </para>
+            <para style="cceGradeDescriptor" alignment="center">
+                aaaaaa
+            </para>
+        </td>
+        <td leftPadding="5.5mm" rightPadding="4.5mm">
+            <para style="cceSubjectGrade" alignment="center">
+                A
+            </para>
+            <para Style="cceGradeDescriptor" alignment="center">
+                aaaa
+            </para>
+        </td>
+    </tr>
+</blockTable>
+{%endblock health_and_physicaleducation %}
+ 
