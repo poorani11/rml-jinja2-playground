@@ -1,0 +1,35 @@
+{% extends 'base.rml' %}
+{% block content %}
+
+
+<nextFrame name ="page4"/>
+<!-- <storyplace x="39mm" y="22.5mm" width="136" height="40mm"> -->
+<blockTable colWidths= "60mm 5mm" style="nakedTable">
+<blockTableStyle id ="inlineStyle">
+<blockValign value="TOP" />
+<blockSpan start="0, 1" stop="1, 1"/>
+</blockTableStyle>
+    <tr>
+        <td>
+            <para style ="cceSubjectName">
+                Literary &amp; Creative Skills
+            </para>
+        </td>
+        <td>
+            <para style="cceSubjectGrade">
+                A
+            </para>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <para style="cceGradeDescriptor">
+                A
+            </para>
+        </td>
+        <td>
+        </td>
+    </tr>
+</blockTable>
+
+{% endblock content %}

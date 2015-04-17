@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!DOCTYPE document SYSTEM "rml.dtd">
+<document filename="base.pdf">
+    <docinit>
+        <registerTTFont faceName="MyriadProBlackCondensed" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-blackcond.ttf"/>
+        <registerTTFont faceName="MyriadProBlackCondensedItalic" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-blackcondit.ttf"/>
+
+        <registerTTFont faceName="MyriadProBoldCondensed" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-boldcond.ttf"/>
+        <registerTTFont faceName="MyriadProBoldCondensedItalic" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-boldcondit.ttf"/>
+
+        <registerTTFont faceName="MyriadProCondensed" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-cond.ttf"/>
+        <registerTTFont faceName="MyriadProCondensedItalic" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-condit.ttf"/>
+
+        <registerTTFont faceName="MyriadProLightCondensed" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-lightcond.ttf"/>
+        <registerTTFont faceName="MyriadProLightCondensedItalic" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-lightcondit.ttf"/>
+
+        <registerTTFont faceName="MyriadProSemiBoldCondensed" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-semiboldcond.ttf"/>
+        <registerTTFont faceName="MyriadProSemiBoldCondensedItalic" fileName="{{ STATIC_ROOT }}/fonts/myriadpro-semiboldcondit.ttf"/>
+
+        <registerTTFont faceName="MyriadPro" fileName="{{ STATIC_ROOT }}/fonts/MYRIADPRO-REGULAR.ttf"/>
+        <registerTTFont faceName="MyriadProBold" fileName="{{ STATIC_ROOT }}/fonts/MYRIADPRO-BOLD.ttf"/>
+        <registerTTFont faceName="MyriadProItalic" fileName="{{ STATIC_ROOT }}/fonts/MYRIADPRO-IT.ttf"/>
+        <registerTTFont faceName="MyriadProBoldItalic" fileName="{{ STATIC_ROOT }}/fonts/MYRIADPRO-BOLDIT.ttf"/>
+
+    </docinit>
+    <template showBoundary="0" pagesize="(16.5in, 11.7in)">
+        <!--define a 'frame' into which the content will flow.-->
+        <pageTemplate id="main">
+          <pageGraphics>
+          </pageGraphics>
+
+          <frame id="page4" x1="46" y1="35" width="525" height="772" />
+          <frame id="page1" x1="645" y1="35" width="525" height="772" />
+          <frame id="page2" x1="35" y1="50" width="525" height="772" />
+          <frame id="page3" x1="630" y1="35" width="525" height="772" />
+          <frame id="xamcheck_data" x1="35" y1="70" width="525" height="700"/>
+        </pageTemplate>
+    </template>
+
+    <stylesheet>
+        <paraStyle name="cellPara" leftIndent="0" fontName="MyriadProCondensed" fontSize="11" spaceBefore="0" spaceAfter="0" leading="14"/>
+        <paraStyle name="cceSubjectName" alignment="left" fontName="MyriadProBoldCondensed" fontSize="12" leading="14" textColor="#000000"/>
+        <paraStyle name="cceSubjectGrade" alignment="center" fontName="MyriadProBoldCondensed" fontSize="12" leading="14" textColor="#000000"/>
+        <paraStyle name="cceGradeDescriptor" alignment="left" fontName="MyriadProCondensed" fontSize="9.5" leading="9.5" textColor="#000000"/>
+      <blockTableStyle id="pastedTable">
+          <blockFont name="MyriadProCondensed" size="11" leading="14">
+          </blockFont>
+          <blockAlignment value="CENTER"></blockAlignment>
+          <lineStyle kind="GRID" colorName="black" thickness="0.5" start="1,0" stop="1,0" />
+      </blockTableStyle>
+      <blockTableStyle id="gridedTable">
+        <blockFont name="MyriadProCondensed" size="14" leading="14">
+        </blockFont>
+        <blockAlignment value="CENTER"></blockAlignment>
+        <lineStyle kind="GRID" colorName="black" thickness="0.5" start="0,0" stop="-1,-1"/>
+      </blockTableStyle>
+
+      <blockTableStyle id="nakedTable">
+        <blockFont name="MyriadProCondensed" size="11" leading="12">
+        </blockFont>
+        <blockTopPadding length="0"/>
+        <blockBottomPadding length="1"/>
+        <blockLeftPadding length="0"/>
+        <blockRightPadding length="0"/>
+        <blockAlignment value="CENTER"></blockAlignment>
+      </blockTableStyle>
+
+      <!-- define a text style -->
+      <paraStyle name="titleFrame" fontName="MyriadProCondensed" fontSize="16" leading="14" />
+    </stylesheet>
+    <story>
+     {%block content %}{%endblock%}
+     </story>
+    </document>
