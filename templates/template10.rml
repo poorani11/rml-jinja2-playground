@@ -1,0 +1,23 @@
+{% extends 'base.rml' %}
+{% block attitude %}
+<blockTable colWidths="160" style="nakedTable">
+  <blockTableStyle id="inlineStyle">
+  <blockValign value="MIDDLE" />
+  </blockTableStyle>
+    <tr>
+        <td>
+            <para style="cceSubjectName">
+              Teachers
+            </para>
+        </td>
+    </tr>
+    <tr>
+    <td>
+        <para style="cceSubjectGrade" alignment="left" leading="9">
+          <font face="MyriadProBoldCondensed">A</font>
+          <font size="9.5"  face="MyriadProCondensed">A</font>
+        </para>
+    </td>
+    </tr>
+</blockTable>
+{%endblock%}

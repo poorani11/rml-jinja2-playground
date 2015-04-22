@@ -1,0 +1,16 @@
+{% extends 'base.rml' %}
+{% block co_scholastic %}
+<blockTable colWidths="175" style="nakedTable">
+  <blockTableStyle id="inlineStyle">
+  <blockValign value="TOP" />
+  </blockTableStyle>
+    <tr>
+        <td>
+            <para style="cceSubjectGrade" alignment="left" leading="9">
+                <font face="MyriadProBoldCondensed">A</font>
+                <font size="9.5"  face="MyriadProCondensed">A</font>
+            </para>
+        </td>
+    </tr>
+</blockTable>
+ {%endblock%}

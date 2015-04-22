@@ -2,9 +2,9 @@
 {% block signature %}
 <illustration height="50" width="525">
     <setFont name="MyriadProCondensed" size="12"/>
-    <drawString x="140" y="30">Django</drawString>
-    <drawString x="140" y="15">Admission no.-4223</drawString>
-    <drawString x="140" y="0">Class/section-5A</drawString>
+    <drawString x="{{xcoordinate}}" y="{{ycoordinate}}">Django</drawString>
+    <drawString x="{{xcoordinate}}" y="{{ycoordinate}}">Admission no.-4223</drawString>
+    <drawString x="{{xcoordinate}}" y="{{ycoordinate}}">Class/section-5A</drawString>
 </illustration>
 
 {% endblock%}

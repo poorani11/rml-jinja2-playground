@@ -22,14 +22,18 @@ jinja2_env = jinja2.Environment(loader=template_loader)
 def main(pdf_output_filepath):
 
     template = jinja2_env.get_template(
-        'template5.rml'
+        'template10.rml'
     )
-
     context = {
         "STATIC_ROOT": STATIC_ROOT,
+        'xcoordinate': '140',
+        'ycoordinate': '30'
     }
 
     rml = template.render(**context)
+
+    with open("/tmp/tmp_output.rml", 'wb') as f:
+        f.write(rml)
 
     rml = unicode(rml).encode('utf-8').strip()
 
@@ -54,3 +58,4 @@ if __name__ == '__main__':
     print sys.argv
     output_path = sys.argv[1]
     main(output_path)
+ 

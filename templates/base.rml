@@ -76,6 +76,8 @@ frame5={"id": "xamcheck_data", "x1":"35","y1":"70","width":"525","height":"772"}
     </stylesheet>
     <story>
    
-     {% block signature %}{%endblock%}
+     {% block attitude %}
+     
+     {%endblock%}
      </story>
     </document>

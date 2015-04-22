@@ -1,0 +1,38 @@
+{% extends 'base.rml' %}
+{% block term1_grades %}
+<blockTable colWidths="115 60 60 60 145" style="nakedTable">
+    <blockTableStyle id="inlineStyle">
+        <blockValign value="MIDDLE"/>
+        <blockLeftPadding length="0" />
+        <blockRightPadding length="0"/>
+        <blockBottomPadding length="0"/>
+    </blockTableStyle>
+    <tr>
+        <td>
+            <para style="cceSubjectName">
+                ENGLISH
+            </para>
+        </td>
+        <td>
+            <para style="cceSubjectGrade">
+                A
+            </para>
+        </td>
+        <td>
+            <para style="cceSubjectGrade">
+                A
+            </para>
+        </td>
+        <td>
+            <para style="cceSubjectGrade">
+                A
+            </para>
+        </td>
+        <td>
+            <para style="cceSubjectGrade">
+                A
+            </para>
+        </td>
+    </tr>
+</blockTable>
+    {%endblock%}

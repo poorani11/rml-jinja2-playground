@@ -8,7 +8,7 @@
     <tr>
         <td>
             <para style ="cceSubjectName">
-                {{creative-skills}}
+                {{creative_skills}}
             </para>
         </td>
         <td>
